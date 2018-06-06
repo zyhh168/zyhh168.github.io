@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>One Piece</title>
+		<link rel="stylesheet" href="source1/css/main.css">
+		<script type="text/javascript" src="source1/js/audio.js"></script>
+		
+		<script> 
+			function open_wrap() { 
+				window.open("./index.html#wrap","_self"); 
+			}
+			function open_content() { 
+				window.open("./index.html#content","_self"); 
+			}
+		</script>
+		
+	</head>
+	
+	<body>
+		<header>
+			<!-- logo -->
+			<div class="logo" id="logo">
+				<img src="./source1/images/one.gif" onclick="open_wrap()">
+			</div>
+		</header>
+	
+		<div class="wrap" id="wrap">
+			<!-- 布鲁克 -->
+			<div class="blk bg" onclick="open_content()" onmouseover="blkAutoplay()" onmouseout="blkstop()">
+				<a target="jieshao" href="./source1/blk.html"></a>
+				<audio id="blk" src="./source1/audio/blk.mp3"></audio>
+			</div>
+			<!-- 乔巴 -->
+			<div class="qb bg" onclick="open_content()" onmouseover="qbAutoplay()" onmouseout="qbstop()">
+				<a target="jieshao" href="./source1/qb.html"></a>
+				<audio id="qb" src="./source1/audio/qb.mp3"></audio>
+			</div>
+			<!-- 乌索普 -->
+			<div class="wsp bg" onclick="open_content()" onmouseover="wspAutoplay()" onmouseout="wspstop()">
+				<a target="jieshao" href="./source1/wsp.html"></a>
+				<audio id="wsp" src="./source1/audio/wsp.mp3"></audio>
+			</div>
+			<!-- 索隆 -->
+			<div class="sl bg" onclick="open_content()" onmouseover="slAutoplay()" onmouseout="slstop()">
+				<a target="jieshao" href="./source1/sl.html"></a>
+				<audio id="sl" src="./source1/audio/sl.mp3"></audio>
+			</div>
+			<!-- 路飞 -->
+			<div class="lf bg" onclick="open_content()" onmouseover="lfAutoplay()" onmouseout="lfstop()">
+				<a target="jieshao" href="./source1/lf.html"></a>
+				<audio id="lf" src="./source1/audio/lf.mp3"></audio>
+			</div>
+			<!-- 娜美 -->
+			<div class="nm bg" onclick="open_content()" onmouseover="nmAutoplay()" onmouseout="nmstop()">
+				<a target="jieshao" href="./source1/nm.html"></a>
+				<audio id="nm" src="./source1/audio/nm.mp3"></audio>
+			</div>
+			<!-- 山治 -->
+			<div class="sz bg" onclick="open_content()" onmouseover="szAutoplay()" onmouseout="szstop()">
+				<a target="jieshao" href="./source1/sz.html"></a>
+				<audio id="sz" src="./source1/audio/sz.mp3"></audio>
+			</div>
+			<!-- 弗兰克 -->
+			<div class="flq bg" onclick="open_content()" onmouseover="flqAutoplay()" onmouseout="flqstop()">
+				<a target="jieshao" href="./source1/flq.html"></a>
+				<audio id="flq" src="./source1/audio/flq.mp3"></audio>
+			</div>
+			<!-- 罗宾 -->
+			<div class="lb bg" onclick="open_content()" onmouseover="lbAutoplay()" onmouseout="lbstop()">
+				<a target="jieshao" href="./source1/lb.html"></a>
+				<audio id="lb" src="./source1/audio/lb.mp3"></audio>
+			</div>
+		</div>
+		
+		<!-- 人物介绍 -->
+		<div class="content" id="content">
+			<iframe name="jieshao" class="jieshao" src="./source1/cm.html" seamless></iframe>
+		</div>
+		
+		<!-- 友情链接以及联系作者 -->
+		<footer>
+			<div class="footer" id="footer">
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="25" height="20" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+					<param name="movie" value="singlemp3player.swf?file=sound.mp3&backColor=990000&frontColor=ddddff&repeatPlay=true&songVolume=30" />
+					<param name="wmode" value="transparent" />
+					<embed wmode="transparent" width="25" height="20" src="singlemp3player.swf?file=sound.mp3&backColor=990000&frontColor=ddddff&repeatPlay=true&songVolume=30" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+				</object>
+				<div class="friend" id="friend">
+					<b>友情链接：</b>
+					<a href="http://www.bilibili.com/" target="_blank">哔哩哔哩</a>&nbsp;&nbsp;
+					<a href="http://www.acfun.tv/" target="_blank">AcFun</a>&nbsp;&nbsp;
+					<a href="http://www.5dm.tv/" target="_blank">D站</a>&nbsp;&nbsp;
+					<a href="http://op.hanhande.com/" target="_blank">海贼王中文网</a>&nbsp;&nbsp;
+					<a href="http://acg.178.com/" target="_blank">178ACG</a>&nbsp;&nbsp;
+					<a href="http://www.yydm.com/" target="_blank">永远动漫</a>&nbsp;&nbsp;
+					<a href="http://www.daman.cc/" target="_blank">大漫网</a>&nbsp;&nbsp;
+					<a href="http://www.52tian.net/" target="_blank">天上人间动漫网</a>&nbsp;&nbsp;
+				</div>
+				<div class="qq" id="qq">
+					联系我:
+					<a target=blank href=tencent://message/?uin=771817997&Site=www.ik38.com&Menu=yes><img border="0" SRC=http://wpa.qq.com/pa?p=1:771817997:1 alt="点击联系"></a>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- 返回顶部 -->
+		<div class="top">
+			<div><a href="#logo">▲</a></div>
+			<div><a href="./source1/music.html" target="_blank">♬</a></div>
+			<div><a href="./source1/movie.html" target="_blank">▶</a></div>
+			<div><a href="#footer">▼</a></div>
+		</div>
+		
+	</body>
+</html>
