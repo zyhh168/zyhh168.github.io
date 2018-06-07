@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <!-- 防止IE8,7进入怪异模式 -->
+<meta http-equiv="Content-Type" content="IE=Edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>海贼王AMV</title>
+<link rel="stylesheet" href="./css/main.css">
+<!-- js通用样式 -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js通用样式 -->
+<!-- 滚动条主要样式 -->
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+<!-- 滚动条主要样式 -->
+<style type="text/css">
+/*格式化样式*/
+body {margin: 0;padding: 0;font-family:Microsoft YaHei!important;background-color: #ffffff;}
+ul,dl,dt,dd,h1,h2,h3,h4,h5,h6,form { padding:0; margin:0;}
+ul { list-style:none;}
+img { border:0px;}
+
+a{text-decoration: none;outline: none;color:#444;}
+a:visited{text-decoration: none;}
+a:hover{cursor: pointer;text-decoration: none; color:#3C97D6;}
+a:focus{-moz-outline-style: none;text-decoration: none;}
+img{border: 0;}
+.clear{clear: both;}
+/*格式化样式*/
+/*播放器样式*/
+.video_player{height:393px;}
+.video_list_area{width: 700px;}
+	ul.video_list{margin: 7px 0px 0px 0;height: 107px; list-style:none;border-bottom: 10px solid #dcdcdc;}
+	ul.video_list li{float: left;font-size: 14px;font-weight: bold;line-height: 24px;}
+	ul.video_list li a{display:inline-block;padding: 14px 15px;margin-right:7px;width: 140px;height:72px;color: #fff;background-color: #7e2d2d;}
+	ul.video_list li.last a{margin-right:0;}
+	ul.video_list li a:hover,ul.video_list li a.on{color: #fff;background-color: #c12e2e;}
+	#ascrail2000-hr div{margin-left:0;}
+.center{width: 700px;margin: 20px auto;}
+/*播放器样式*/
+</style>
+<!--- iframe切换停止播放js -->
+<script type="text/javascript">
+$(function() {
+	var iframe = $("div.video_player iframe");//播放页面
+	$('ul.video_list li a').click(function(){
+		iframe.attr("src",$(this).attr("name"));//更改iframe src
+		$('ul.video_list li a').removeClass('on');
+		$(this).addClass('on');//给点击的元素添加正在播放标识
+	});
+	
+});
+</script>
+<!-- iframe切换停止播放js -->
+</head>
+
+<body>
+	<header>
+		<!-- logo -->
+		<div class="logo" id="logo">
+			<img src="./images/one.gif" onclick="open_wrap()">
+		</div>
+	</header>
+	
+	<div class="center">
+	<!-- 播放器 -->
+	<div class="video_player">
+		<iframe src="./movie/【海贼王】因为他是我们的船长！.mp4" width="700px" height="393px" frameborder="0" scrolling="No"></iframe>
+	</div>
+	<div class="dec_10 clearborder">
+		<div class="video_list_area">
+			<ul class="video_list">
+				<li><a class="on" name="./movie/【海贼王】因为他是我们的船长！.mp4"> 【海贼王】因为他是我们的船长！</a></li>
+				<li><a name="./movie/【燃amv】旧时代与新时代.mp4">【燃amv】旧时代与新时代</a></li>
+				<li><a name="./movie/海贼王 强者的骄傲.mp4">海贼王 强者的骄傲</a></li>
+				<li><a name="./movie/海贼王.mp4">海贼王</a></li>
+				<li class="last"><a name="./movie/七分钟德雷斯罗萨战争全亮点回顾.mp4">七分钟德雷斯罗萨战争全亮点回顾</a></li>
+			</ul>
+		</div> 
+	</div> 
+	<!-- 播放器 -->
+	</div>
+<!-- 美化滚动条js -->
+<script type="text/javascript">
+var video_list_lenght=$("ul.video_list li").length;
+$("ul.video_list").css("width",$("ul.video_list li").width()*video_list_lenght-7);// 减去margin-right的7px长度
+$(".video_list_area").niceScroll({  
+	cursorcolor:" #c12e2e",  //#FF6666滚动条光标颜色
+	cursoropacitymax:1,      //改变不透明度，光标处于活动状态（scrollabar“可见”状态），范围从1到0
+	touchbehavior:false,     //使光标拖动滚动像在台式电脑触摸设备
+	autohidemode:false,      //是否隐藏滚动条
+	cursorwidth:"10px",      //像素光标的宽度
+	cursorborder:"0",        //游标边框css定义
+	cursorborderradius:"0px" //以像素为光标边界半径 
+}); 
+</script>
+<!-- 美化滚动条js -->
+<!-- 注意：jquery.nicescroll.js文件里的（rtlmode: "auto"属性。一般的滚动条都是垂直方向所以对此属性可能不注意。改为rtlmode：false,即可实现水平滚动。次文件已更改） -->
+
+	<!-- 友情链接以及联系作者 -->
+	<footer>
+		<div class="footer" id="footer">
+			<div class="friend" id="friend">
+				<b>友情链接：</b>
+				<a href="http://www.bilibili.com/" target="_blank">哔哩哔哩</a>&nbsp;&nbsp;
+				<a href="http://www.acfun.tv/" target="_blank">AcFun</a>&nbsp;&nbsp;
+				<a href="http://www.5dm.tv/" target="_blank">D站</a>&nbsp;&nbsp;
+				<a href="http://op.hanhande.com/" target="_blank">海贼王中文网</a>&nbsp;&nbsp;
+				<a href="http://acg.178.com/" target="_blank">178ACG</a>&nbsp;&nbsp;
+				<a href="http://www.yydm.com/" target="_blank">永远动漫</a>&nbsp;&nbsp;
+				<a href="http://www.daman.cc/" target="_blank">大漫网</a>&nbsp;&nbsp;
+				<a href="http://www.52tian.net/" target="_blank">天上人间动漫网</a>&nbsp;&nbsp;
+			</div>
+			<div class="qq" id="qq">
+				联系我:
+				<a target=blank href=tencent://message/?uin=771817997&Site=www.ik38.com&Menu=yes><img border="0" SRC=http://wpa.qq.com/pa?p=1:771817997:1 alt="点击联系"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+

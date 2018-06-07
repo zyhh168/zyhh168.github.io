@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>海贼王歌曲</title>
+	<link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="Css/tplayer.css" />
+  <link rel="stylesheet" type="text/css" href="Plugins/FontAwesome4.1/css/font-awesome.min.css" />
+  <script src="Js/jquery.js"></script>
+  <script src="Js/jquery-ui.js"></script>
+  <script src="Js/tPlayer.js"></script>
+</head>
+
+<body>
+	<header>
+		<!-- logo -->
+		<div class="logo" id="logo">
+			<img src="./images/one.gif" onclick="open_wrap()">
+		</div>
+	</header>
+	
+  <div id="t_wrapper">
+		<!-- 歌曲封面 -->
+    <div id="t_cover">
+    	<img src="Images/Cover/logo.png">
+    </div>
+  	<div id="t_top">
+  		<div id="t_title_info">
+  			<span class="artist"></span>
+  			<span class="title"></span>
+  		</div>
+  	</div>
+  	<div id="t_middle">
+  		<div id="play"></div>
+  		<div id="pause" class="hidden"></div>
+  		<div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="t_progress">
+        <div id="trackInfo">
+          <div id="error"></div>
+          <div id="current">0:00</div>
+          <div id="duration">0:00</div>
+  			</div>
+  			<div style="width: 0%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+          	<span style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+      </div>
+  		<span id="prev"></span>
+          <span id="next"></span>
+  	</div>
+  	<div id="t_bottom">
+          <div id="range">
+              <div id="val"></div>
+              <div id="vol"></div>
+              <div id="rangeVal"></div>
+          </div>
+          <div id="t_pls_show" class="noselectpls"></div>
+  	</div>
+  </div>
+	
+  <div id="playlist">
+		<!-- 歌曲封面与t_cover对应 -->
+    <ul>
+      <li t_cover="1.png" t_artist="ADVENTURE WORLD" t_name="デリカテッセン">
+      	<a href="#">ADVENTURE WORLD - デリカテッセン</a>
+      	<audio preload="none">
+          <source src="audio/song/ADVENTURE WORLD - デリカテッセン.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="Believe" t_name="Folder5">
+      	<a href="#">Believe - Folder5</a>
+      	<audio preload="none">
+          <source src="audio/song/Believe - Folder5.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="BRAND NEW WORLD" t_name="D-51">
+      	<a href="#">BRAND NEW WORLD - D-51</a>
+      	<audio preload="none">
+          <source src="audio/song/BRAND NEW WORLD - D-51.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="Crazy Rainbow - タッキー&翼.png" t_artist="Crazy Rainbow" t_name="タッキー&翼">
+      	<a href="#">Crazy Rainbow - タッキー&翼</a>
+      	<audio preload="none">
+          <source src="audio/song/Crazy Rainbow - タッキー&翼.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="Dear friends" t_name="TRIPLANE">
+      	<a href="#">Dear friends - TRIPLANE</a>
+      	<audio preload="none">
+          <source src="audio/song/Dear friends - TRIPLANE.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="Family ～9人の麦わらの一味編～ - 中井和哉,岡村明美,山口勝平.png" t_artist="Family ～9人の麦わらの一味編～" t_name="中井和哉,岡村明美...">
+      	<a href="#">Family ～9人の麦わらの一味編～ - 中井和哉,岡村明美,山口勝平</a>
+      	<audio preload="none">
+          <source src="audio/song/Family ～9人の麦わらの一味編～ - 中井和哉,岡村明美,山口勝平.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="Holy Holiday! - 田中真弓.png" t_artist="Holy Holiday!" t_name="田中真弓">
+      	<a href="#">Holy Holiday! - 田中真弓</a>
+      	<audio preload="none">
+          <source src="audio/song/Holy Holiday! - 田中真弓.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="Jungle P" t_name="5050">
+      	<a href="#">Jungle P - 5050</a>
+      	<audio preload="none">
+          <source src="audio/song/Jungle P - 5050.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="memories" t_name="大槻マキ">
+      	<a href="#">memories - 大槻マキ</a>
+      	<audio preload="none">
+          <source src="audio/song/memories - 大槻マキ.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="One day - Rootless.png" t_artist="One day" t_name="Rootless">
+      	<a href="#">One day - Rootless</a>
+      	<audio preload="none">
+          <source src="audio/song/One day - Rootless.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="RUN!RUN!RUN!" t_name="大槻マキ">
+      	<a href="#">RUN!RUN!RUN! - 大槻マキ</a>
+      	<audio preload="none">
+          <source src="audio/song/RUN!RUN!RUN! - 大槻マキ.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="Share The World" t_name="东方神起">
+      	<a href="#">Share The World - 东方神起</a>
+      	<audio preload="none">
+          <source src="audio/song/Share The World - 东方神起.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="WANTED! - 田中真弓.png" t_artist="WANTED!" t_name="田中真弓">
+      	<a href="#">WANTED! - 田中真弓</a>
+      	<audio preload="none">
+          <source src="audio/song/WANTED! - 田中真弓.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="ウィーアー ~9人の麦わら海贼団篇~ - 日本ACG.png" t_artist="ウィーアー ~9人の麦わら海贼団篇~" t_name="日本ACG">
+      	<a href="#">ウィーアー ~9人の麦わら海贼団篇~ - 日本ACG</a>
+      	<audio preload="none">
+          <source src="audio/song/ウィーアー ~9人の麦わら海贼団篇~ - 日本ACG.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="ココロのちず" t_name="BOYSTYLE">
+      	<a href="#">ココロのちず - BOYSTYLE</a>
+      	<audio preload="none">
+          <source src="audio/song/ココロのちず - BOYSTYLE.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="ヒカリへ" t_name="ザ・ベイビースターズ">
+      	<a href="#">ヒカリへ - ザ・ベイビースターズ</a>
+      	<audio preload="none">
+          <source src="audio/song/ヒカリへ - ザ・ベイビースターズ.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="ビンクスの酒 (BONUS TRACK)" t_name="麦わらの一味">
+      	<a href="#">ビンクスの酒 (BONUS TRACK) - 麦わらの一味</a>
+      	<audio preload="none">
+          <source src="audio/song/ビンクスの酒 (BONUS TRACK) - 麦わらの一味.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="风をさがして" t_name="矢口真里,ストローハット">
+      	<a href="#">风をさがして - 矢口真里,ストローハット</a>
+      	<audio preload="none">
+          <source src="audio/song/风をさがして - 矢口真里,ストローハット.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="未来航海" t_name="タッキー&翼">
+      	<a href="#">未来航海 - タッキー&翼</a>
+      	<audio preload="none">
+          <source src="audio/song/未来航海 - タッキー&翼.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+			<li t_cover="1.png" t_artist="月と太阳" t_name="Shela">
+      	<a href="#">月と太阳 - Shela</a>
+      	<audio preload="none">
+          <source src="audio/song/月と太阳 - Shela.mp3" type="audio/mp3">
+      	</audio>
+      </li>
+    </ul>
+  </div>
+	
+	<!-- 友情链接以及联系作者 -->
+	<footer>
+		<div class="footer" id="footer">
+			<div class="friend" id="friend">
+				<b>友情链接：</b>
+				<a href="http://www.bilibili.com/" target="_blank">哔哩哔哩</a>&nbsp;&nbsp;
+				<a href="http://www.acfun.tv/" target="_blank">AcFun</a>&nbsp;&nbsp;
+				<a href="http://www.5dm.tv/" target="_blank">D站</a>&nbsp;&nbsp;
+				<a href="http://op.hanhande.com/" target="_blank">海贼王中文网</a>&nbsp;&nbsp;
+				<a href="http://acg.178.com/" target="_blank">178ACG</a>&nbsp;&nbsp;
+				<a href="http://www.yydm.com/" target="_blank">永远动漫</a>&nbsp;&nbsp;
+				<a href="http://www.daman.cc/" target="_blank">大漫网</a>&nbsp;&nbsp;
+				<a href="http://www.52tian.net/" target="_blank">天上人间动漫网</a>&nbsp;&nbsp;
+			</div>
+			<div class="qq" id="qq">
+				联系我:
+				<a target=blank href=tencent://message/?uin=771817997&Site=www.ik38.com&Menu=yes><img border="0" SRC=http://wpa.qq.com/pa?p=1:771817997:1 alt="点击联系"></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
