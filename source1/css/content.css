@@ -1,0 +1,27 @@
+
+.wrap {
+	width: 1070px;
+	height: 400px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.blk {background-color: #636363;}
+.qb {background-color: #e684b3;}
+.wsp {background-color: #a15639;}
+.sl {background-color: #62a139;}
+.lf {background-color: #a13938;}
+.nm {background-color: #d27d3c;}
+.sz {background-color: #c2c53a;}
+.flq {background-color: #3ba1d2;}
+.lb {background-color: #743993;}
+
+.cover {
+	width: 180px;
+	height: 271px;
+}
+
+.p {
+	margin-top: 10px;
+	text-indent: 2em;
+}
